@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Invitation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7eded;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #e6005c;
+        }
+        .invitation-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+        .button-group {
+            margin-top: 20px;
+        }
+        .button-group button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button-group button:hover {
+            background-color: #e6005c;
+            color: #fff;
+        }
+        .response-message {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Li ya, Happy Valentine's Day,</h1>
+        <div class="invitation-card">
+            <p>On this special day, I just want to remind you how much you mean to me. You bring a kind of warmth and joy into my life that I truly cherish, and I’m grateful for every moment we share.</p>
+            <p>I’d love to spend this day with you—sharing laughter, sweet moments, and filling the air with a little extra love. No matter where life takes us, know that you have a special place in my heart, always.</p>
+            <p>You are someone I hold close to my heart, more than words can express.
+
+            With all my affection,</p>
+            <p3>Srlanh u</p>
+            <p3>Srlanh me heh.</p>
+            <div class="button-group">
+                <button onclick="respond('Yes')">Yes</button>
+                <button onclick="respond('No')">No</button>
+            </div>
+            <div class="response-message" id="responseMessage"></div>
+        </div>
+    </div>
+    <script>
+        function respond(response) {
+            var messageElement = document.getElementById("responseMessage");
+            if (response === 'Yes') {
+                messageElement.textContent = "cute mes jos😭";
+            } else if (response === 'No') {
+                messageElement.textContent = "bach te nh orn jit ng u klang klang🙄";
+            }
+        }
+    </script>
+</body>
+</html>
